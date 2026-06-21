@@ -1,0 +1,76 @@
+{
+  "status": "success",
+  "message": "Messages fetched successfully.",
+  "messages": [
+    {
+      "message_id": "26f8c417-3136-4526-9ad1-a0b715574128",
+      "thread_id": "d2e00c2d-e13b-4720-88d1-6b5efdb8ccca",
+      "role": "user",
+      "content": "What was the main problem with sequential processing before transformers?",
+      "created_at": "2026-05-20T11:39:50.388418+00:00"
+    },
+    {
+      "message_id": "742d1c77-4e29-4a92-932f-3bdaed57cdca",
+      "thread_id": "d2e00c2d-e13b-4720-88d1-6b5efdb8ccca",
+      "role": "chatbot",
+      "content": "The main problem with sequential processing before transformers was that it worked like a person reading a book through a straw, where they could only see one word at a time. By the time they reached page 50, they had a very blurry memory of what happened on page 1. This method was slow and forgetful, as it didn't see the entire context of the sentence or document at once, leading to a loss of earlier information as it progressed.",
+      "created_at": "2026-05-20T11:39:51.805788+00:00"
+    },
+    {
+      "message_id": "67f2715b-a852-4a0f-a574-1b747b5645e9",
+      "thread_id": "d2e00c2d-e13b-4720-88d1-6b5efdb8ccca",
+      "role": "user",
+      "content": "Explain the 'Satellite View' analogy used to describe how a transformer works.",
+      "created_at": "2026-05-20T11:39:51.863598+00:00"
+    },
+    {
+      "message_id": "ac84b48e-0688-4336-bb51-fe510898c9be",
+      "thread_id": "d2e00c2d-e13b-4720-88d1-6b5efdb8ccca",
+      "role": "chatbot",
+      "content": "The 'Satellite View' analogy is used to describe how a transformer processes information differently from traditional methods. Here's a detailed explanation:\n\n**The Problem with the Old Way: The Single-File Line**\n\nBefore transformers, AI systems processed information sequentially, much like a person reading a book through a straw. They could only focus on one word at a time, similar to how a straw lets you drink one sip at a time. By the time they reached the middle of the book, they had a very blurry memory of what happened at the beginning. This method of sequential processing was slow and prone to forgetting earlier context because each new piece of information was processed in isolation.\n\n**The Transformer Solution: The Satellite View**\n\nA transformer works like a satellite taking a high-resolution photo of an entire city at once. Unlike the single-file line approach, where context is lost over time, a transformer views the entire sentence or document all at once. This means it doesn't read left to right word by word but processes every word in the context of the entire document simultaneously. This allows it to understand the relationships, meaning, tone, and facts of each word in the context of the whole, much like how a satellite sees the whole city and understands spatial relationships and patterns.\n\nIn essence, the 'Satellite View' analogy highlights the transformer's ability to process and understand context in a holistic manner, rather than sequentially. This allows it to make more informed and accurate predictions and generate responses that maintain coherence and context throughout the entire input.",
+      "created_at": "2026-05-20T11:39:53.479579+00:00"
+    },
+    {
+      "message_id": "b86d3f81-013e-4652-9e9e-825bdf7ff78c",
+      "thread_id": "d2e00c2d-e13b-4720-88d1-6b5efdb8ccca",
+      "role": "user",
+      "content": "How does self-attention handle the relationship between words like 'it' and 'phone'?",
+      "created_at": "2026-05-20T11:39:53.537259+00:00"
+    },
+    {
+      "message_id": "e4113bbc-074e-479b-9be5-f4edbfdbf53e",
+      "thread_id": "d2e00c2d-e13b-4720-88d1-6b5efdb8ccca",
+      "role": "chatbot",
+      "content": "Self-attention in the model works by \"highlighting\" or emphasizing the most relevant connections between words in a sentence. In the example provided, \"The battery of the phone died because it was old,\" self-attention allows the model to draw a strong connection between the word \"it\" and the word \"phone.\" \n\nIn this context, \"it\" refers to the \"phone,\" not the \"battery,\" because a phone can become old over time, whereas a battery does not typically get \"old\" in the same way. The model uses attention mechanisms to mathematically determine which words are most relevant to each other, ignoring less relevant words like \"battery\" in this particular relationship.\n\nThis process allows the model to understand complex relationships and dependencies in a sentence, recognizing that certain words are more closely related than others based on the context. This is akin to how a human reader would naturally focus on the most pertinent parts of a sentence when trying to understand its meaning.",
+      "created_at": "2026-05-20T11:39:54.746057+00:00"
+    },
+    {
+      "message_id": "5cb11a6f-02e9-4d9e-ae8f-e068329f881e",
+      "thread_id": "d2e00c2d-e13b-4720-88d1-6b5efdb8ccca",
+      "role": "user",
+      "content": "What are the specific roles of Expert 1, Expert 2, and Expert 3 in Multi-Head Attention?",
+      "created_at": "2026-05-20T11:39:54.795060+00:00"
+    },
+    {
+      "message_id": "e6c581de-8e7d-425e-9631-6fdc2e227516",
+      "thread_id": "d2e00c2d-e13b-4720-88d1-6b5efdb8ccca",
+      "role": "chatbot",
+      "content": "In the Multi-Head Attention framework, each expert has a specific role to play in understanding the text:\n\n- **Expert 1**: This expert focuses solely on grammar. They analyze the sentence structure, punctuation, and overall grammatical correctness to ensure that the text adheres to standard linguistic rules.\n\n- **Expert 2**: This expert is dedicated to understanding the emotions conveyed in the text. They pay attention to words and phrases that express feelings, moods, and emotional undertones, helping to capture the emotional context of the text.\n\n- **Expert 3**: This expert looks specifically for dates and numbers within the text. They identify and interpret any temporal or quantitative information, which is crucial for understanding events, timelines, and factual data.\n\nBy working together, these experts provide a comprehensive understanding of the text by covering different aspects such as grammar, emotions, and factual data.",
+      "created_at": "2026-05-20T11:39:55.892722+00:00"
+    },
+    {
+      "message_id": "de3a9ee5-2aa2-40a0-8582-ee5443b41a6e",
+      "thread_id": "d2e00c2d-e13b-4720-88d1-6b5efdb8ccca",
+      "role": "user",
+      "content": "Why do transformers need Positional Encoding, and what analogy is used for it?",
+      "created_at": "2026-05-20T11:39:55.982358+00:00"
+    },
+    {
+      "message_id": "113809d3-0b73-4562-969e-88cb009eb6a8",
+      "thread_id": "d2e00c2d-e13b-4720-88d1-6b5efdb8ccca",
+      "role": "chatbot",
+      "content": "Transformers need Positional Encoding because, unlike traditional models that process sentences sequentially (one word at a time), they process the entire sentence at once. This means they can't inherently understand the order of the words since they see all the words simultaneously. To fix this, transformers use Positional Encoding, which is akin to giving every word a \"tag\" that includes its position in the sentence. This allows the model to understand the sequence and order of words, much like how a person reading a book through a straw (sequentially) understands the order of words by processing one at a time.",
+      "created_at": "2026-05-20T11:39:57.043246+00:00"
+    }
+  ]
+}
